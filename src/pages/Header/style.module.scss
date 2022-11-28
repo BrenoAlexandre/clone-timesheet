@@ -1,0 +1,62 @@
+@import '../../exports.module';
+
+.header {
+  position: sticky;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 100%;
+  min-height: 5rem;
+  width: auto;
+
+  padding: 0 3rem;
+
+  color: var(--white);
+  background-color: var(--primary-200);
+
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+
+  img {
+    @extend .Clickable;
+  }
+
+  span {
+    @extend .RegularText;
+
+    color: var(--white);
+  }
+
+  &__start {
+    @extend .header;
+
+    gap: 60%;
+    box-shadow: none;
+  }
+
+  &__end {
+    @extend .header;
+
+    gap: 2rem;
+    box-shadow: none;
+
+    span {
+      color: var(--primary-600);
+    }
+
+    p {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 21px;
+
+      color: var(--white);
+    }
+
+    h6 {
+      @extend .HelperText;
+
+      color: var(--primary-600);
+    }
+  }
+}
