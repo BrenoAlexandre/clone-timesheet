@@ -1,7 +1,9 @@
+@use '../../../styles/colors';
+
 .cardTitle {
   margin: 0 0 1.6rem;
 
   line-height: 2.1rem;
 
-  color: var(--grey-600);
+  color: colors.$grey-600;
 }

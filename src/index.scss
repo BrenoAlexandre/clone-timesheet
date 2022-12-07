@@ -1,12 +1,10 @@
-@import './_exports.module.scss';
+@use './styles/colors';
 
 .defaultReset {
   padding: 0;
   margin: 0;
   font-family: 'DM Sans', 'Montserrat', sans-serif;
 }
-
-// font-family: 'Montserrat', sans-serif;
 
 html {
   @extend .defaultReset;
@@ -18,7 +16,7 @@ body {
 
   font-size: 1.6rem;
 
-  background-color: var(--white);
+  background-color: colors.$white;
 }
 
 a {
@@ -31,7 +29,7 @@ a {
 }
 
 main {
-  background-color: var(--grey-100);
+  background-color: colors.$grey-100;
   padding: 2.4rem 3.6rem 0 2.4rem;
 }
 

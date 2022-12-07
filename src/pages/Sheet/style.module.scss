@@ -1,11 +1,12 @@
-@import '../../exports.module';
+@use '../../styles/exports';
+@use '../../styles/colors';
 
 .homeTitle {
   @extend .TitleText;
 
   padding: 0 0 4.8rem;
 
-  color: var(--primary-300);
+  color: colors.$primary-300;
 }
 
 .cardContainer {
@@ -21,25 +22,25 @@
   .subjectHours {
     @extend .HourTypography;
 
-    color: var(--primary-400);
+    color: colors.$primary-400;
   }
 
   .expectedHours {
     @extend .HourTypography;
 
-    color: var(--blue);
+    color: colors.$blue;
   }
 
   .extraHours {
     @extend .HourTypography;
 
-    color: var(--green-400);
+    color: colors.$green-400;
   }
 
   .warning {
     @extend .HourTypography;
 
-    color: var(--red-300);
+    color: colors.$red-300;
   }
 }
 
@@ -48,7 +49,7 @@
   span {
     @extend .TitleText;
 
-    color: var(--grey-600);
+    color: colors.$grey-600;
   }
 }
 
@@ -80,12 +81,12 @@
         font-size: 1.6rem;
         line-height: 2.1rem;
 
-        color: var(--grey-700);
-        background-color: var(--grey-400);
+        color: colors.$grey-700;
+        background-color: colors.$grey-400;
 
         padding: 2rem 2rem 1.4rem;
 
-        border-right: 0.1rem solid var(--grey-500);
+        border-right: 0.1rem solid colors.$grey-500;
 
         img {
           @extend .Clickable;
@@ -107,12 +108,12 @@
 
         width: 100%;
 
-        color: var(--grey-600);
-        background-color: var(--grey-400);
+        color: colors.$grey-600;
+        background-color: colors.$grey-400;
 
         padding: 2rem 2rem 1.4rem;
 
-        border-right: 0.1rem solid var(--grey-500);
+        border-right: 0.1rem solid colors.$grey-500;
 
         overflow: hidden;
         white-space: nowrap;
@@ -120,10 +121,10 @@
       }
 
       tr:nth-child(odd) td {
-        background-color: var(--grey-100);
+        background-color: colors.$grey-100;
       }
       tr:nth-child(even) td {
-        background-color: var(--grey-300);
+        background-color: colors.$grey-300;
       }
     }
 
