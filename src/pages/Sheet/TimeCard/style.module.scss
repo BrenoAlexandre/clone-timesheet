@@ -1,9 +1,9 @@
-@use '../../../styles/colors';
+@use '../../../styles';
 
 .cardTitle {
   margin: 0 0 1.6rem;
 
   line-height: 2.1rem;
 
-  color: colors.$grey-600;
+  color: styles.$grey-600;
 }

@@ -1,4 +1,4 @@
-@use './styles/colors';
+@use './styles';
 
 .defaultReset {
   padding: 0;
@@ -16,7 +16,7 @@ body {
 
   font-size: 1.6rem;
 
-  background-color: colors.$white;
+  background-color: styles.$white;
 }
 
 a {
@@ -29,7 +29,7 @@ a {
 }
 
 main {
-  background-color: colors.$grey-100;
+  background-color: styles.$grey-100;
   padding: 2.4rem 3.6rem 0 2.4rem;
 }
 

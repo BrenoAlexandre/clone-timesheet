@@ -1,5 +1,4 @@
-@use '../../styles/exports';
-@use '../../styles/colors';
+@use '../../styles';
 
 .header {
   position: sticky;
@@ -14,8 +13,8 @@
 
   padding: 0 3rem;
 
-  color: colors.$white;
-  background-color: colors.$primary-200;
+  color: styles.$white;
+  background-color: styles.$primary-200;
 
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 
@@ -26,7 +25,7 @@
   span {
     @extend .RegularText;
 
-    color: colors.$white;
+    color: styles.$white;
   }
 
   &__start {
@@ -43,7 +42,7 @@
     box-shadow: none;
 
     span {
-      color: colors.$primary-600;
+      color: styles.$primary-600;
     }
 
     p {
@@ -51,13 +50,13 @@
       font-size: 16px;
       line-height: 21px;
 
-      color: colors.$white;
+      color: styles.$white;
     }
 
     h6 {
       @extend .HelperText;
 
-      color: colors.$primary-600;
+      color: styles.$primary-600;
     }
   }
 }
